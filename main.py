@@ -13,7 +13,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('!청소'):
+    if message.content.startswith('!클린'):
         try:
             # 메시지 관리 권한 있을시 사용가능
             if message.author.guild_permissions.manage_messages:
