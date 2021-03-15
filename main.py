@@ -20,7 +20,7 @@ async def on_message(message):
                 amount = message.content[4:]
                 await message.delete()
                 await message.channel.purge(limit=int(amount))
-                message = await message.channel.send(embed=discord.Embed(title='```[ Delete Massage ]```' + str(amount) + '개의 메시지가 삭제되었습니다', colour=discord.Colour.green()))
+                message = await message.channel.send(embed=discord.Embed(title='🧹' + str(amount) + '개의 메시지가 삭제되었습니다', colour=discord.Colour.green()))
                 await asyncio.sleep(2)
                 await message.delete()
             else:
